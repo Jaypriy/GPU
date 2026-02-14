@@ -16,6 +16,8 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     position: relative;
+    width: 100%;
+    max-width: 100vw;
 }
 
 @keyframes gradientShift {
@@ -854,42 +856,99 @@ body {
 
 @media (max-width: 480px) {
     .container {
-        padding: 25px 15px;
+        padding: 20px 12px;
+        max-width: 98%;
+        margin: 10px auto;
+    }
+
+    .badge {
+        font-size: 0.7rem;
+        padding: 5px 12px;
     }
 
     .title {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+        line-height: 1.2;
+    }
+
+    .subtitle {
+        font-size: 0.85rem;
     }
 
     .rotating-emoji {
-        font-size: 3.5rem;
+        font-size: 3rem;
+    }
+
+    .glow-effect {
+        width: 100px;
+        height: 100px;
     }
 
     .question {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
+        line-height: 1.3;
     }
 
     .pleading-message {
-        font-size: 1rem;
+        font-size: 0.95rem;
+    }
+
+    .attempt-counter {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+
+    .emoji-row {
+        gap: 10px;
+    }
+
+    .floating-emoji {
+        font-size: 1.3rem;
     }
 
     .btn {
-        width: 95%;
-        padding: 16px 30px;
-        font-size: 1.1rem;
+        width: 100%;
+        max-width: 100%;
+        padding: 15px 25px;
+        font-size: 1rem;
+    }
+
+    .btn-text {
+        font-size: 0.95rem;
     }
 
     .btn-icon {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 
     .features {
-        gap: 15px;
+        gap: 12px;
+        flex-direction: column;
     }
 
     .feature-item {
-        min-width: 80px;
-        padding: 15px 10px;
+        min-width: 100%;
+        padding: 18px 15px;
+    }
+
+    .feature-icon {
+        font-size: 2.2rem;
+    }
+
+    .feature-item p {
+        font-size: 0.95rem;
+    }
+
+    .feature-item small {
+        font-size: 0.75rem;
+    }
+
+    .reasons {
+        padding: 15px;
+    }
+
+    .reasons-title {
+        font-size: 1.3rem;
     }
 
     .reason-item {
@@ -897,19 +956,79 @@ body {
     }
 
     .reason-header {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
+        gap: 10px;
+    }
+
+    .reason-emoji {
+        font-size: 1.3rem;
+    }
+
+    .expand-icon {
+        font-size: 0.85rem;
     }
 
     .reason-details p {
-        font-size: 0.85rem;
-        padding-left: 30px;
+        font-size: 0.8rem;
+        padding-left: 25px;
+        line-height: 1.5;
+    }
+
+    .modal-content {
+        padding: 30px 20px;
+        margin: 15% auto;
     }
 
     .celebration-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+
+    .celebration-text {
+        font-size: 1rem;
+    }
+
+    .celebration-subtext {
+        font-size: 0.85rem;
+    }
+
+    .celebration-message p {
+        font-size: 1rem;
     }
 
     .bounce-emoji {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+    .container {
+        padding: 15px 10px;
+    }
+
+    .title {
+        font-size: 1.4rem;
+    }
+
+    .question {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        padding: 14px 20px;
+        font-size: 0.95rem;
+    }
+
+    .feature-item {
+        padding: 15px 12px;
+    }
+
+    .reason-header {
+        font-size: 0.85rem;
+    }
+
+    .reason-details p {
+        font-size: 0.75rem;
+        padding-left: 20px;
     }
 }
