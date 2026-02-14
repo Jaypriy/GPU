@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Didi Plz GPU 🎮💖</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="stars"></div>
+    <div class="particles"></div>
+
+    <div class="container">
+        <div class="header">
+            <div class="badge">🔥 TRENDING REQUEST 🔥</div>
+            <h1 class="title">
+                <span class="emoji">🎮</span>
+                Didi Plz GPU
+                <span class="emoji">💻</span>
+            </h1>
+            <p class="subtitle">The Most Important Question of 2026! 😎</p>
+        </div>
+
+        <div class="content">
+            <div class="gpu-icon">
+                <span class="rotating-emoji">🖥️</span>
+                <div class="glow-effect"></div>
+            </div>
+
+            <h2 class="question" id="mainQuestion">
+                Will you buy me a GPU? 🥺👉👈
+            </h2>
+
+            <div id="pleadingMessage" class="pleading-message">
+                Please Didi... I promise I'll be good! 😇
+            </div>
+
+            <div id="attemptCounter" class="attempt-counter" style="display: none;">
+                <span class="counter-emoji">😅</span>
+                You tried to say "No" <span id="attemptCount">0</span> times!
+                <span class="counter-emoji">😂</span>
+            </div>
+
+            <div class="emoji-row">
+                <span class="floating-emoji" style="animation-delay: 0s">✨</span>
+                <span class="floating-emoji" style="animation-delay: 0.5s">💎</span>
+                <span class="floating-emoji" style="animation-delay: 1s">🎯</span>
+                <span class="floating-emoji" style="animation-delay: 1.5s">⚡</span>
+                <span class="floating-emoji" style="animation-delay: 2s">🚀</span>
+                <span class="floating-emoji" style="animation-delay: 2.5s">💖</span>
+            </div>
+
+            <div class="buttons-container">
+                <button id="yesBtn" class="btn yes-btn">
+                    <span class="btn-icon">✅</span>
+                    <span class="btn-text">YES! OF COURSE!</span>
+                    <span class="btn-icon">💚</span>
+                    <div class="btn-shine"></div>
+                </button>
+
+                <button id="noBtn" class="btn no-btn">
+                    <span class="btn-icon">❌</span>
+                    <span class="btn-text" id="noBtnText">No</span>
+                    <span class="btn-icon">😢</span>
+                </button>
+            </div>
+
+            <div class="features">
+                <div class="feature-item">
+                    <span class="feature-icon">🎨</span>
+                    <p>RTX 5090</p>
+                    <small> Dream GPU ✨ (cheaper bhi chalega)</small>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">⚡</span>
+                    <p>Ultra Speed</p>
+                    <small>Lightning Fast ⚡</small>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">�</span>
+                    <p>Pro Ready</p>
+                    <small>Animation & Editing 🚀</small>
+                </div>
+            </div>
+
+            <div class="reasons">
+                <h3 class="reasons-title">Why I Need This GPU: 🤔</h3>
+                <div class="reason-list">
+                    <div class="reason-item" onclick="toggleReason(this)">
+                        <div class="reason-header">
+                            <span class="reason-emoji">🎬</span>
+                            <span class="reason-title">Video Editing & Rendering</span>
+                            <span class="expand-icon">▼</span>
+                        </div>
+                        <div class="reason-details">
+                            <p>Need powerful GPU for 4K video editing in DaVinci Resolve and Adobe Premiere Pro. A good
+                                graphic card will handle color grading, effects, and rendering 100x faster! Currently my
+                                laptop
+                                takes hours to render a simple 5-minute video. �</p>
+                        </div>
+                    </div>
+                    <div class="reason-item" onclick="toggleReason(this)">
+                        <div class="reason-header">
+                            <span class="reason-emoji">🎨</span>
+                            <span class="reason-title">3D Animation & Modeling</span>
+                            <span class="expand-icon">▼</span>
+                        </div>
+                        <div class="reason-details">
+                            <p>Learning Blender for 3D animation and character modeling. GPU rendering is essential for
+                                realistic lighting and textures. With a powerful graphic card, I can create amazing
+                                animations without waiting days for renders! 🚀</p>
+                        </div>
+                    </div>
+                    <div class="reason-item" onclick="toggleReason(this)">
+                        <div class="reason-header">
+                            <span class="reason-emoji">🤖</span>
+                            <span class="reason-title">AI & Machine Learning</span>
+                            <span class="expand-icon">▼</span>
+                        </div>
+                        <div class="reason-details">
+                            <p>Training AI models and running Stable Diffusion for image generation. GPU acceleration is
+                                crucial for deep learning projects. A high-end graphic card's tensor cores will make my
+                                AI experiments actually possible! 🧠✨</p>
+                        </div>
+                    </div>
+                    <div class="reason-item" onclick="toggleReason(this)">
+                        <div class="reason-header">
+                            <span class="reason-emoji">🎮</span>
+                            <span class="reason-title">Game Development</span>
+                            <span class="expand-icon">▼</span>
+                        </div>
+                        <div class="reason-details">
+                            <p>Creating games in Unreal Engine 5 with ray tracing and realistic graphics. Need powerful
+                                GPU for real-time rendering and testing. Plus, compiling shaders and baking lighting
+                                takes forever without a good GPU! 🎯</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Celebration Modal -->
+    <div id="celebrationModal" class="modal">
+        <div class="modal-content">
+            <div class="confetti"></div>
+            <h2 class="celebration-title">🎉 YAAAY! 🎉</h2>
+            <p class="celebration-text">Thank you Didi! You're the BEST! 💖</p>
+            <p class="celebration-subtext">I knew you couldn't resist! �</p>
+            <div class="celebration-emojis">
+                <span class="bounce-emoji">🎊</span>
+                <span class="bounce-emoji">🎁</span>
+                <span class="bounce-emoji">🎮</span>
+                <span class="bounce-emoji">💻</span>
+                <span class="bounce-emoji">�</span>
+                <span class="bounce-emoji">💎</span>
+                <span class="bounce-emoji">�🎊</span>
+            </div>
+            <div class="celebration-message">
+                <p>🎮 Graphic Card incoming! 🚀</p>
+                <p>🎯 Best Didi Award unlocked! 🏆</p>
+            </div>
+            <button id="closeModal" class="btn yes-btn">Awesome! Let's Go! 🚀</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
